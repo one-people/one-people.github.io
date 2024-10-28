@@ -1,0 +1,8 @@
+.arco-table-th {
+  font-weight: bolder;
+  background-color: transparent;
+}
+
+.arco-table-td {
+  border-bottom: none;
+}
