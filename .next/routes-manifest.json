@@ -2,16 +2,8 @@
   "version": 3,
   "pages404": true,
   "caseSensitive": false,
-  "basePath": "/gh-pages",
+  "basePath": "",
   "redirects": [
-    {
-      "source": "/gh-pages/",
-      "destination": "/gh-pages",
-      "basePath": false,
-      "internal": true,
-      "statusCode": 308,
-      "regex": "^/gh-pages/$"
-    },
     {
       "source": "/:path+/",
       "destination": "/:path+",

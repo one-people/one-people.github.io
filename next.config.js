@@ -2,7 +2,7 @@
 
 const nextConfig = {
   output: 'export',
-  basePath: '/gh-pages',
+  // basePath: '/gh-pages',
   distDir: 'docs',
 }
 
