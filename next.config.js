@@ -2,8 +2,8 @@
 
 const nextConfig = {
   output: 'export',
-  // basePath: '/gh-pages',
-  distDir: 'docs',
+  basePath: '/one-people.github.io',
+  distDir: 'docs'
 }
 
 module.exports = nextConfig;

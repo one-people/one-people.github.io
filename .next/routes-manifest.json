@@ -2,8 +2,16 @@
   "version": 3,
   "pages404": true,
   "caseSensitive": false,
-  "basePath": "",
+  "basePath": "/one-people.github.io",
   "redirects": [
+    {
+      "source": "/one-people.github.io/",
+      "destination": "/one-people.github.io",
+      "basePath": false,
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^/one-people\\.github\\.io/$"
+    },
     {
       "source": "/:path+/",
       "destination": "/:path+",
