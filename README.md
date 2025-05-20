@@ -1,30 +1,38 @@
-# pc-react-template-next
+# Deploying to GitHub Pages
 
-PC端项目版本- react
+This example supports deploying a statically exported Next.js application to GitHub Pages.
 
-## 工程目录简介
+The `out` directory should not be ignored by version control.
 
-> vite.config.ts vite配置文件
-> public 公共资源目录
-> src 源文件目录
->> api 请求相关目录
->> assert 静态资源文件目录
->> components 公共组件目录
->> layout 页面布局文件目录
->> pages 路由页面文件目录
->> routes 路由配置文件目录
->> app.tsx 根组件
->> main.tsx 入口文件
-> index.html 模板文件
+## How to use
 
-## 安装使用
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
-yarn 安装项目依赖
-npm run dev 项目本地启动
-npm run build 项目构建打包
+```bash
+npx create-next-app --example github-pages github-pages-app
+```
 
-## 参考资料
+```bash
+yarn create next-app --example github-pages github-pages-app
+```
 
-react: https://react.nodejs.cn/
-arco-design: https://arco.design/react/docs/start
+```bash
+pnpm create next-app --example github-pages github-pages-app
+```
 
+### Deploy to GitHub Pages
+
+1.  Create a new public GitHub repository.
+1.  Edit `next.config.js` to match your GitHub repository name:
+    - Given the pattern `https://github.com/<user>/<repo>`, update your `basePath` config to `/repo`.
+1.  Push the starter code to the `main` branch.
+1.  Run the `deploy` script (e.g. `npm run deploy`) to create the `gh-pages` branch.
+1.  On GitHub, go to **Settings** > **Pages** > **Branch**, and choose `gh-pages` as the branch with the `/root` folder. Hit **Save**.
+1.  Make a change.
+1.  Run the `deploy` script again to push the changes to GitHub Pages.
+
+Congratulations! You should have a URL like:
+
+```bash
+https://<github-user-name>.github.io/<github-project-name>/
+```
